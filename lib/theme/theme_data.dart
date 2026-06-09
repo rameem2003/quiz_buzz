@@ -54,23 +54,23 @@ class AppTheme {
         displayLarge: TextStyle(
           fontSize: 40,
           fontWeight: FontWeight.w800,
-          color: Color(0xFF0D1B2A),
+          color: Color(0xFFFFFFFF),
           height: 1.1,
         ),
         displayMedium: TextStyle(
           fontSize: 32,
           fontWeight: FontWeight.w800,
-          color: Color(0xFF0D1B2A),
+          color: Color(0xFFFFFFFF),
         ),
         headlineLarge: TextStyle(
           fontSize: 26,
           fontWeight: FontWeight.w700,
-          color: Color(0xFF0D1B2A),
+          color: Colors.white,
         ),
         headlineMedium: TextStyle(
           fontSize: 22,
           fontWeight: FontWeight.w700,
-          color: Color(0xFF0D1B2A),
+          color: Color(0xFFFFFFFF),
         ),
         titleLarge: TextStyle(
           fontSize: 18,
