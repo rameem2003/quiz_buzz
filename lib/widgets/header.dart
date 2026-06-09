@@ -12,7 +12,7 @@ class Header extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
-            'Quiz Master',
+            'Quiz BUZZ..',
             style: TextTheme.of(context).headlineLarge?.copyWith(
               color: Colors.white,
               fontWeight: FontWeight.w600,

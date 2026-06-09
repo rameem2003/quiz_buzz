@@ -31,7 +31,7 @@ class HomeScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      'Welcome to Quiz Master!',
+                      'Welcome to Quiz Buzz...!',
                       style: TextTheme.of(context).headlineMedium?.copyWith(
                         color: Colors.blue[800],
                         fontWeight: FontWeight.w600,

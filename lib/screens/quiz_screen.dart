@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_buzz/models/question.dart';
 import 'package:quiz_buzz/models/result.dart';
+import 'package:quiz_buzz/screens/result_screen.dart';
 import 'package:quiz_buzz/theme/theme_data.dart';
 import 'package:quiz_buzz/widgets/answer_button.dart';
 import 'package:quiz_buzz/widgets/header.dart';
@@ -89,17 +90,10 @@ class _QuizScreenState extends State<QuizScreen> {
 
     // navigate to result screen with fade transition
 
-    // Navigator.pushReplacement(
-    //   context,
-    //   PageRouteBuilder(
-    //     transitionDuration: const Duration(milliseconds: 400),
-    //     pageBuilder: (_, _, _) =>
-    //         ResultScreen(result: result, questions: widget.questions),
-    //     transitionsBuilder: (_, animation, __, child) {
-    //       return FadeTransition(opacity: animation, child: child);
-    //     },
-    //   ),
-    // );
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(builder: (context) => ResultScreen(result: result)),
+    );
   }
 
   @override
@@ -107,11 +101,7 @@ class _QuizScreenState extends State<QuizScreen> {
     final isLast = _currentIndex == widget.questions.length - 1;
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        onPressed: _answered
-            ? _nextQuestion
-            : isLast
-            ? _finishQuiz
-            : null,
+        onPressed: _nextQuestion,
         backgroundColor: _answered
             ? AppTheme.primaryBlue
             : isLast

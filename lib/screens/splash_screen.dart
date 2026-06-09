@@ -103,13 +103,18 @@ class _splashScreenState extends State<splashScreen>
               Column(
                 children: [
                   Text(
-                    'Quiz Master',
-                    style: TextTheme.of(context).headlineLarge,
+                    'Quiz Buz...',
+                    style: TextTheme.of(context).headlineLarge?.copyWith(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w600,
+                    ),
                   ),
                   Text(
                     "Test Your Flutter Knowledge with Quiz Master!",
-
-                    style: TextTheme.of(context).titleMedium,
+                    style: TextTheme.of(context).titleMedium?.copyWith(
+                      color: Colors.white.withAlpha(200),
+                      fontWeight: FontWeight.w800,
+                    ),
                   ),
                 ],
               ),
