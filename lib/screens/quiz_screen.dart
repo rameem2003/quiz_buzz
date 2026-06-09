@@ -87,6 +87,8 @@ class _QuizScreenState extends State<QuizScreen> {
 
     print(_score);
 
+    // navigate to result screen with fade transition
+
     // Navigator.pushReplacement(
     //   context,
     //   PageRouteBuilder(
